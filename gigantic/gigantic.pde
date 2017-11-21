@@ -11,7 +11,7 @@ void setup()
   //lower(x1,y1,dim);
   n=1;
   upper(x1,y1,dim);
-  save("giga.jpeg");
+  save("giga.png");
 }
 
 

@@ -2,7 +2,8 @@ float zoom = 10;
 int maxiterations = 100;
 void setup()
 {
-  fullScreen();
+  //fullScreen();
+  size(1400,1024);
   gradient(0,0,width,height,#41295a,#2F0743);
   smooth();
   //frameRate(1);
@@ -17,7 +18,10 @@ void draw()
     {
       zoom-=sin(PI/(2*zoom));
     }  
-    else noLoop();
+    else {
+      saveFrame("poison.png");
+      noLoop();
+    }
 }
 void mousePressed()
 {

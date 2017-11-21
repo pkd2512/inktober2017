@@ -1,7 +1,7 @@
 float x1,y1,dim,n=1,weight=PI/n;
 void setup()
 {
- // size(screen.width,screen.height);
+  size(1024,1024);
   gradient(0,0,width,height,#000428,#2F0743);
   smooth();
   x1=width/2;
@@ -18,8 +18,10 @@ void draw()
   //y1/=2;
   dim-=(PI*1.618);
   }
-  //else
-  //saveFrame("longtober##.jpeg");
+  else{
+  saveFrame("longtober##.png");
+  noLoop();
+  }
 }
 
 void curl(float x, float y, float d)

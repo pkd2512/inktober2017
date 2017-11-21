@@ -51,7 +51,7 @@ class Divider
 
 void setup()
 {
-  size(800,800);
+  size(1024,1024);
   background(lerpColor(#141E30, #243B55, 0.5));
   frameRate(1);
   noLoop();
@@ -69,7 +69,7 @@ void draw()
   div.angle=(random(-2*PI, 2*PI));
   print(div.angle+"\t");
   div.generate();
-  saveFrame("swift-####.jpeg");
+  saveFrame("swift-####.png");
 }
 
 void mousePressed()

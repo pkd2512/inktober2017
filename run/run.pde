@@ -26,7 +26,7 @@ void draw()
   }
   else
   {
-  save("runner##.jpeg");
+  save("runner##.png");
   noLoop();
   }
 }
